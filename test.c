@@ -1,20 +1,23 @@
 
-//  1. Check whether a number is even or odd.
-
-
-
 #include <stdio.h>
 
-int main(){
+int main()
+{
 
-    int num;
+    int n;
+    printf("Enter Table Number: ");
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    if (num%2==0) printf("Even \n");
-    else printf("Odd \n");
+    for (int i = 1; i <= 10; i++)
+    {
+        printf("%d * %d = %d \n", n, i, n*i);
+    }
     
-
     return 0;
 }
+
+
+
+
+
