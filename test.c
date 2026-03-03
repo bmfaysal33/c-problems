@@ -4,20 +4,19 @@
 int main()
 {
 
-    int n;
-    printf("Enter Table Number: ");
+    int n, tem, rev = 0;
+    printf("Enter a Number: ");
 
     scanf("%d", &n);
 
-    for (int i = 1; i <= 10; i++)
+    while (n != 0)
     {
-        printf("%d * %d = %d \n", n, i, n*i);
-    }
+        tem = n % 10;
+        n/=10;
+        rev = rev *10 + tem;
     
+    }
+
+    printf("Reversed Number : %d", rev);
     return 0;
 }
-
-
-
-
-
