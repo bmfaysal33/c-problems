@@ -4,19 +4,20 @@
 int main()
 {
 
-    int n, tem, rev = 0;
+    int n, digit=0;
     printf("Enter a Number: ");
 
     scanf("%d", &n);
 
+    if(n==0) digit =1;
+
     while (n != 0)
     {
-        tem = n % 10;
+        
         n/=10;
-        rev = rev *10 + tem;
-    
+       digit++;
     }
 
-    printf("Reversed Number : %d", rev);
+    printf("Digits in the number : %d", digit);
     return 0;
 }

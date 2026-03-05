@@ -259,9 +259,7 @@ int main()
     return 0;
 }
 
-
-//11. Print multiplication table of any number.
-
+// 11. Print multiplication table of any number.
 
 #include <stdio.h>
 
@@ -275,16 +273,13 @@ int main()
 
     for (int i = 1; i <= 10; i++)
     {
-        printf("%d * %d = %d \n", n, i, n*i);
+        printf("%d * %d = %d \n", n, i, n * i);
     }
-    
+
     return 0;
 }
 
-
 // 12. Reverse a number using a loop.
-
-
 
 #include <stdio.h>
 
@@ -299,12 +294,36 @@ int main()
     while (n != 0)
     {
         tem = n % 10;
-        n/=10;
-        rev = rev *10 + tem;
-    
+        n /= 10;
+        rev = rev * 10 + tem;
     }
 
     printf("Reversed Number : %d", rev);
     return 0;
 }
 
+// 13.  Count the digits in a number.
+
+#include <stdio.h>
+
+int main()
+{
+
+    int n, digit = 0;
+    printf("Enter a Number: ");
+
+    scanf("%d", &n);
+
+    if (n == 0)
+        digit = 1;
+
+    while (n != 0)
+    {
+
+        n /= 10;
+        digit++;
+    }
+
+    printf("Digits in the number : %d", digit);
+    return 0;
+}
