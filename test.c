@@ -4,20 +4,16 @@
 int main()
 {
 
-    int n, digit=0;
+    int  n, fact=1;
     printf("Enter a Number: ");
 
     scanf("%d", &n);
 
-    if(n==0) digit =1;
+    for(int i=1; i<=n; i++)
+   {
+    fact = fact * i;
+   }
 
-    while (n != 0)
-    {
-        
-        n/=10;
-       digit++;
-    }
-
-    printf("Digits in the number : %d", digit);
+    printf("Factorial is : %d", fact);
     return 0;
 }

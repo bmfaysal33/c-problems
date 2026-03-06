@@ -327,3 +327,34 @@ int main()
     printf("Digits in the number : %d", digit);
     return 0;
 }
+
+
+// 14. Calculate the factorial of a number.
+
+#include <stdio.h>
+
+int main()
+{
+    int  n, fact=1;
+    
+    printf("Enter a Number: ");
+    scanf("%d", &n);
+
+    for(int i=1; i<=n; i++)
+   {
+    fact = fact * i;
+   }
+
+    printf("Factorial is : %d", fact);
+    return 0;
+}
+ 
+
+// 15. Check whether a number is a palindrome.
+
+
+
+
+
+
+
