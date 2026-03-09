@@ -3,17 +3,19 @@
 
 int main()
 {
-
-    int  n, fact=1;
-    printf("Enter a Number: ");
+    int a = 0, b = 1, sum = 0, n;
+    printf("Enter N: ");
 
     scanf("%d", &n);
 
-    for(int i=1; i<=n; i++)
-   {
-    fact = fact * i;
-   }
+    printf("Fibonacci series up to N terms: \n");
+    for (int i = 1; i <= n; i++)
+    {
+        printf("%d ", a);
+        sum = a + b;
+        a = b;
+        b = sum;
+    }
 
-    printf("Factorial is : %d", fact);
     return 0;
 }

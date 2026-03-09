@@ -353,8 +353,132 @@ int main()
 // 15. Check whether a number is a palindrome.
 
 
+#include <stdio.h>
+
+int main()
+{
+    int n, rev = 0, temp;
+    printf("Enter a Number: ");
+
+    scanf("%d", &n);
+    int num = n;
+    while (n != 0)
+    {
+        temp = n % 10;
+        n /= 10;
+        rev = rev * 10 + temp;
+    }
+
+    if (rev == num)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
+
+    return 0;
+}
 
 
 
+//  16. Check whether a number is an Armstrong number.
 
+
+#include <stdio.h>
+
+int main()
+{
+    int n, sum = 0, temp;
+    printf("Enter a Number: ");
+
+    scanf("%d", &n);
+    int num =n;
+    while (n != 0)
+    {
+        temp = n %10 ;
+        sum = sum + (temp * temp *temp);
+        n /=10;
+    }
+
+    if (sum == num)
+        printf("Armstrong");
+    else
+        printf("Not Armstrong");
+
+    return 0;
+}
+
+
+
+// 17. Find the sum of digits of a number.
+
+#include <stdio.h>
+
+int main()
+{
+    int n, sum = 0, temp;
+    printf("Enter a Number: ");
+
+    scanf("%d", &n);
+    int num = n;
+    while (n != 0)
+    {
+        temp = n % 10;
+        sum = sum + temp;
+        n /= 10;
+    }
+
+    printf("Sum of the digits : %d", sum);
+
+    return 0;
+}
+
+
+// 18. Find the product of digits of a number.
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n, Product = 1, temp;
+    printf("Enter a Number: ");
+
+    scanf("%d", &n);
+    
+    while (n != 0)
+    {
+        temp = n % 10;
+        Product = Product * temp;
+        n /= 10;
+    }
+
+    printf("Product of the digits : %d", Product);
+
+    return 0;
+}
+
+
+// 19. Print Fibonacci series up to N terms.
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 0, b = 1, sum = 0, n;
+    printf("Enter N: ");
+
+    scanf("%d", &n);
+
+    printf("Fibonacci series up to N terms: \n");
+    for (int i = 1; i <= n; i++)
+    {
+        printf("%d ", a);
+        sum = a + b;
+        a = b;
+        b = sum;
+    }
+
+    return 0;
+}
 
